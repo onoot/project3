@@ -1,0 +1,263 @@
+.main-payfinish {
+  /* display: flex; */
+  display: none;
+  justify-content: center;
+  padding: 30px 0 50px 0;
+}
+
+.main-payfinish-content {
+  max-width: 730px;
+}
+
+.main-payfinish-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.main-payfinish-title__title {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 26px;
+  text-align: center;
+  color: #222;
+}
+
+.main-payfinish-title__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #222;
+}
+
+.main-payfinish-wait {
+  margin: 0 0 15px;
+  color: #222;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.main-payfinish-text {
+  margin: 0 0 15px;
+  font-size: 16px;
+  color: #222;
+  text-align: center;
+}
+
+.main-payfinish-unload {
+  margin: 0 0 15px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+}
+
+.main-payfinish-loading {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  height: 40px;
+}
+
+@keyframes spinner {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
+
+.spin {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 0 45px;
+}
+
+.spin::before {
+  display: flex;
+  justify-content: center;
+  animation: 1.5s linear infinite spinner;
+  animation-play-state: inherit;
+  border: solid 5px #cfd0d1;
+  border-bottom-color: #1c87c9;
+  border-radius: 50%;
+  content: "";
+  height: 40px;
+  width: 40px;
+  /* position: absolute; */
+  top: 10%;
+  left: 10%;
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
+}
+
+.main-payfinish-payment {
+  margin-top: 40px;
+  background: #f7f7f7;
+  border-radius: 4px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-payfinish-payment__title {
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #7d7e84;
+  margin-bottom: 5px;
+}
+
+.main-payfinish-payment__address {
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.main-payfinish-payment__info {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3f4045;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .main-paycrypto-content {
+    max-width: 630px;
+  }
+
+  .main-confirm-steps {
+    justify-content: center;
+  }
+
+  .main-payfinish-title {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 834px) {
+  .main-paycrypto-content {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-payfinish-title__title {
+    font-size: 17px;
+  }
+
+  .main-payfinish-title__text {
+    font-size: 16px;
+  }
+
+  .main-payfinish-text {
+    font-size: 14px;
+  }
+
+  .main-payfinish-unload {
+    font-size: 14px;
+  }
+
+  .main-payfinish-payment__title {
+    font-size: 14px;
+  }
+
+  .main-payfinish-payment__address {
+    font-size: 14px;
+  }
+
+  .main-payfinish-payment__info {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 568px) {
+  .main-paycrypto-content {
+    padding: 0 10px;
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-paycrypto-content {
+    padding: 0 10px;
+    max-width: 100%;
+  }
+
+  .main-confirm-steps_step {
+    width: 100%;
+  }
+
+  .main-payfinish-title__title {
+    font-size: 15px;
+  }
+
+  .main-payfinish-title__text {
+    font-size: 14px;
+  }
+
+  .main-payfinish-wait {
+    font-size: 14px;
+  }
+
+  .main-payfinish-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 390px) {
+  .main-confirm-steps_step {
+    width: 100%;
+  }
+
+  .main-confirm-steps_step_icon {
+    width: 21px;
+    height: 21px;
+  }
+
+  .main-confirm-steps_step_icon > div {
+    width: 21px;
+    height: 21px;
+    font-size: 13px;
+  }
+
+  .main-payfinish-title__title {
+    font-size: 14px;
+  }
+
+  .main-payfinish-title__text {
+    font-size: 13px;
+  }
+
+  .main-payfinish-wait {
+    font-size: 13px;
+  }
+
+  .main-payfinish-text {
+    font-size: 11px;
+  }
+
+  .main-payfinish-payment__title {
+    font-size: 13px;
+  }
+
+  .main-payfinish-payment__address {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-confirm-steps_step_text {
+    font-size: 12px;
+  }
+
+  .main-confirm-steps_step {
+    width: 100%;
+  }
+}
